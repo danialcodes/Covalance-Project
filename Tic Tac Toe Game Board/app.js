@@ -7,19 +7,19 @@ cells.forEach(e => {
 
 function cellClicked() {
     if (count == 10) {
+        document.querySelector('.result').textContent = '';
         removeElement();        
     }
 
     else if (event.target.textContent.length < 1) {
-        
         if (count % 2 == 0) {
             event.target.textContent = 'O';
         } else {
             event.target.textContent = 'X';
         }
-        if(count > 4){
-            result(event.target.textContent);
-        }
+        
+        result();
+        
 
         count += 1;
         console.log(count);
@@ -27,7 +27,10 @@ function cellClicked() {
 
 }
 
-function result(who) {
+function result() {
+    if (count==9) {
+        document.querySelector('.result').textContent ="Draw!";
+    }
     let check = [
         ['one','two','three'],
         ['four','five','six'],
@@ -45,9 +48,11 @@ function result(who) {
         });
         if(win==="XXX"){
             document.querySelector('.result').textContent ="X wins!";
+            count=9;
         }
         else if(win==="OOO"){
             document.querySelector('.result').textContent ="O wins!";
+            count=9;
         }
     });
 
