@@ -1,0 +1,14 @@
+body{
+    background: lightgray;
+}
+h1{
+    color: rgba(219, 85, 8, 0.911);
+}
+.friend{
+    background: rgb(25, 204, 180);
+    border-radius: 5px;
+    padding: 10px 5px 10px 20px;
+}
+.friend>h3{
+    text-transform: uppercase;
+}

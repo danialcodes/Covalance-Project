@@ -1,0 +1,36 @@
+.board{
+    padding: 3em;
+    text-align: center;
+}
+.result{
+    font-size: 1.5em;
+    color: red;
+    font-weight: 800;
+}
+.row>div{
+    font-family: monospace;
+    float: left;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    font-size: 75px;
+    line-height: 100px;
+}
+.row{
+    clear: both;
+    margin: 0 auto;
+    width: 302px;
+    /* border: 2px solid black; */
+}
+.top{
+    border-bottom: 1px solid black;
+}
+.bottom{
+    border-top: 1px solid black;
+}
+.left{
+    border-right: 1px solid black;
+}
+.right{
+    border-left: 1px solid black;
+}

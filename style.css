@@ -1,0 +1,73 @@
+body{
+    font-family: Inconsolata;
+    /* font-weight: 400; */
+    background: lightgray;
+}
+h2,p,.readme-wrapper{
+    text-align: center;
+}
+[name="readmore"]{
+    text-decoration: none;
+    color: red;
+}
+a:hover{
+    cursor: pointer;
+    font-weight: 700;
+    color: green;
+}
+span{
+    color: rgb(150, 48, 48);
+    font-weight: 700;
+}
+.boxes{
+    margin: 15px;
+    padding: 5px;
+    border: 1px solid black;
+    width: 30em;
+    border-radius: 1em;
+    display: block;
+}
+#box1{
+    background: rgb(100, 233, 100);
+
+}
+#box2{
+    
+    background: rgb(131, 133, 7);
+
+}
+#box3{
+    background: rgb(30, 211, 187);
+
+}
+#box4{
+    background: rgb(124, 78, 145);
+
+}
+.img{
+    position: relative;
+    top: 3em;
+    left: 8em;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background: yellow;
+}
+h1{
+    color: teal;
+}
+.original{
+    color: violet;
+}
+.additional{
+    color: tomato;
+}
+ul{
+    color: rgb(117, 0, 117);
+}
+.star{
+    color: rgb(233, 151, 0);
+}
+.list{
+    border:2px solid black;
+}
