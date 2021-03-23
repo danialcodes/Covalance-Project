@@ -1,0 +1,31 @@
+.boxes > div{
+    background: dodgerblue;
+    border: 3px solid rgba(0,0,0,0.2);
+    padding: 0.5em;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+.boxes{
+    border: 1px solid black;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-flow: wrap;
+}
+
+nav{
+    background: whitesmoke;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+body{
+    background: lightgray;
+    margin: 0;
+}
