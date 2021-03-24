@@ -1,3 +1,4 @@
+let count = 0;
 document.addEventListener('DOMContentLoaded', function () {
     /* ........................ Study..............*/
     //     let paragraph = document.createElement('p');
@@ -73,11 +74,57 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
     }
+    let button = document.createElement('button');
+    let btnText = document.createTextNode('Click to add a new list item');
+    button.appendChild(btnText);
+    div.appendChild(button);
+    button.className = 'btn';
+
+    let l = document.createElement('ul');
+    l.className = 'list';
+    div.appendChild(l);
+
+    document.getElementsByClassName('btn')[0].addEventListener('click', function () {
+        addList();
+    });
 
 
-    // document.getElementsByClassName(h).style.color = color[random];
-    // div.appendChild(h);
+    function addList() {
+        // if (count == 0) {
+        //     count += 1;
+        //     let list_item = document.createElement('li');
+        //     list_item.className = 'list-item-' + count;
+        //     let ltxt = document.createTextNode('This is list item ' + count);
+        //     list_item.appendChild(ltxt);
+        //     let list = document.getElementsByTagName('ul');
+        //     list[0].appendChild(list_item);
 
+        // }
+        // else if (count > 0) {
+            count += 1;
+            let list_item = document.createElement('li');
+            list_item.className = 'list-item-' + count;
+            let ltxt = document.createTextNode('This is list item ' + count);
+            list_item.appendChild(ltxt);
+            let list = document.getElementsByTagName('ul');
+            list[0].appendChild(list_item);
+
+        // }
+
+        list_item.addEventListener("click", function(){
+            let random = Math.floor(Math.random() * color.length);
+            list_item.style.color = color[random];
+        });
+
+        list_item.addEventListener("dblclick", function(){
+            this.remove();
+            count-=1;
+          
+        });
+
+    }
 
 
 });
+
+

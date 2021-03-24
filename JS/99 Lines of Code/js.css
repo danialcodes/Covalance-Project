@@ -8,7 +8,14 @@ h1{
     background: rgb(25, 204, 180);
     border-radius: 5px;
     padding: 10px 5px 10px 20px;
+    border: 1px solid black;
+    margin: 2px;
 }
 .friend>h3{
     text-transform: uppercase;
+    text-align: center;
+}
+p{
+    background: blueviolet;
+    text-align: center;
 }

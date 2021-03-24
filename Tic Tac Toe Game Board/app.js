@@ -13,9 +13,9 @@ function cellClicked() {
 
     else if (event.target.textContent.length < 1) {
         if (count % 2 == 0) {
-            event.target.textContent = 'O';
+            event.target.textContent = 'খ';
         } else {
-            event.target.textContent = 'X';
+            event.target.textContent = 'ক';
         }
         
         result();
@@ -46,12 +46,12 @@ function result() {
         e.forEach(ie => {
             win += document.querySelector('#'+ie).textContent;
         });
-        if(win==="XXX"){
-            document.querySelector('.result').textContent ="X wins!";
+        if(win==="ককক"){
+            document.querySelector('.result').textContent ="ক জিতছে!";
             count=9;
         }
-        else if(win==="OOO"){
-            document.querySelector('.result').textContent ="O wins!";
+        else if(win==="খখখ"){
+            document.querySelector('.result').textContent ="খ জিতছে!";
             count=9;
         }
     });
