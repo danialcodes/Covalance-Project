@@ -29,7 +29,7 @@ function cellClicked() {
 
 function result() {
     if (count==9) {
-        document.querySelector('.result').textContent ="Draw!";
+        document.querySelector('.result').textContent ="পেটকাটা!";
     }
     let check = [
         ['one','two','three'],
